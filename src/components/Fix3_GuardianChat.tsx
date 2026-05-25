@@ -47,7 +47,7 @@ export const GuardianBubble: React.FC<GuardianBubbleProps> = ({ currentAnalysis 
 
   const callLLM = async (userPrompt: string): Promise<string> => {
     const anthropicKey = import.meta.env.VITE_ANTHROPIC_API_KEY;
-    const geminiKey = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyDmv7tzmLaZcQaN0_Ob_EZe8DCt5Qi9Suw"; // Real active key
+    const geminiKey = import.meta.env.VITE_GEMINI_API_KEY; // Secure environment variable
 
     // Formulate Context Prompt
     const contextPrompt = currentAnalysis 
